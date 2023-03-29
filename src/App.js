@@ -23,7 +23,7 @@ function App() {
       <h1>Yetans Magic Emporium</h1>
       <ul>
         <li>
-          <img src={products[0].images[0]} alt={products[0].name}></img>
+          <img src={products[0].image} alt={products[0].name}></img>
           <h2>{products[0].name}</h2>
           <h3>
             Rarity: {products[0].metadata.rarity} | Type:{' '}
@@ -33,7 +33,7 @@ function App() {
           <button>Buy now {products[0].prices[0].unit_amount}</button>
         </li>
         <li>
-          <img src={products[1].images[0]} alt={products[1].name}></img>
+          <img src={products[1].image} alt={products[1].name}></img>
           <h2>{products[1].name}</h2>
           <h3>
             Rarity: {products[1].metadata.rarity} | Type:{' '}
@@ -43,7 +43,7 @@ function App() {
           <button>Buy now {products[1].prices[0].unit_amount}</button>
         </li>
         <li>
-          <img src={products[2].images[0]} alt={products[2].name}></img>
+          <img src={products[2].image} alt={products[2].name}></img>
           <h2>{products[2].name}</h2>
           <h3>
             Rarity: {products[2].metadata.rarity} | Type:{' '}
@@ -53,7 +53,7 @@ function App() {
           <button>Buy now {products[2].prices[0].unit_amount}</button>
         </li>
         <li>
-          <img src={products[3].images[0]} alt={products[3].name}></img>
+          <img src={products[3].image} alt={products[3].name}></img>
           <h2>{products[2].name}</h2>
           <h3>
             Rarity: {products[3].metadata.rarity} | Type:{' '}
@@ -63,7 +63,7 @@ function App() {
           <button>Buy now {products[3].prices[0].unit_amount}</button>
         </li>
         <li>
-          <img src={products[4].images[0]} alt={products[4].name}></img>
+          <img src={products[4].image} alt={products[4].name}></img>
           <h2>{products[4].name}</h2>
           <h3>
             Rarity: {products[4].metadata.rarity} | Type:{' '}
@@ -73,7 +73,7 @@ function App() {
           <button>Buy now {products[4].prices[0].unit_amount}</button>
         </li>
         <li>
-          <img src={products[5].images[0]} alt={products[5].name}></img>
+          <img src={products[5].image} alt={products[5].name}></img>
           <h2>{products[5].name}</h2>
           <h3>
             Rarity: {products[5].metadata.rarity} | Type:{' '}
