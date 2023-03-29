@@ -20,7 +20,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Sunglass Shop</h1>
+      <h1>Yetans Magic Emporium</h1>
+      <h2>{products[0].name}</h2>
     </div>
   );
 }
