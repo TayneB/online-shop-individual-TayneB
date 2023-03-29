@@ -20,7 +20,7 @@ const Product = ({
         Rarity: {rarity} | Type: {type}
       </h3>
       <p>{description}</p>
-      <button onClick={onClick}>Buy now {price} Gold Pieces or local equivalent</button>
+      <button onClick={onClick}>Buy now {price} Gold Pieces</button>
     </li>
   );
 };
