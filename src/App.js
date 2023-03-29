@@ -20,7 +20,6 @@ function App() {
     loadData();
   }, []);
 
-
   /* onClick={checkout(products[0].prices[0].id)} */
 
   return (
@@ -38,13 +37,13 @@ function App() {
           <button>Buy now {products[0].prices[0].unit_amount}</button>
         </li> */}
         <Product
-        priceID={products[0].prices[0].id}
-        image={products[0].images[0]}
-        named={products[0].name}
-        description={products[0].description}
-        price={products[0].prices[0].unit_amount}
-        rarity={products[0].metadata.rarity}
-        type={products[0].metadata.type}
+          priceID={products[0].prices[0].id}
+          image={products[0].images[0]}
+          named={products[0].name}
+          description={products[0].description}
+          price={products[0].prices[0].unit_amount}
+          rarity={products[0].metadata.rarity}
+          type={products[0].metadata.type}
         />
         {/* <li>
           <img src={products[1].images[0]} alt={products[1].name}></img>
