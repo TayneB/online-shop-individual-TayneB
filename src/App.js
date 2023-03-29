@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import './App.css';
 
+import { checkout } from './services/checkout'; 
 // The function that makes the fetch request to the Products API
 import { getProducts } from './services/getProducts';
 
@@ -18,6 +19,8 @@ function App() {
     loadData();
   }, []);
 
+  /* onClick={checkout(products[0].prices[0].id)} */
+
   return (
     <div className="container">
       <h1>Yetans Magic Emporium</h1>
@@ -30,6 +33,7 @@ function App() {
             {products[0].metadata.type}
           </h3>
           <p>{products[0].description}</p>
+         
           <button>Buy now {products[0].prices[0].unit_amount}</button>
         </li>
         <li>
