@@ -1,7 +1,8 @@
 import { React, useEffect, useState } from 'react';
 import './App.css';
 
-import { checkout } from './services/checkout'; 
+import Product from './Components/Product.js';
+
 // The function that makes the fetch request to the Products API
 import { getProducts } from './services/getProducts';
 
@@ -19,13 +20,14 @@ function App() {
     loadData();
   }, []);
 
+
   /* onClick={checkout(products[0].prices[0].id)} */
 
   return (
     <div className="container">
       <h1>Yetans Magic Emporium</h1>
       <ul>
-        <li>
+        {/* <li>
           <img src={products[0].images[0]} alt={products[0].name}></img>
           <h2>{products[0].name}</h2>
           <h3>
@@ -33,10 +35,18 @@ function App() {
             {products[0].metadata.type}
           </h3>
           <p>{products[0].description}</p>
-         
           <button>Buy now {products[0].prices[0].unit_amount}</button>
-        </li>
-        <li>
+        </li> */}
+        <Product
+        priceID={products[0].prices[0].id}
+        image={products[0].images[0]}
+        named={products[0].name}
+        description={products[0].description}
+        price={products[0].prices[0].unit_amount}
+        rarity={products[0].metadata.rarity}
+        type={products[0].metadata.type}
+        />
+        {/* <li>
           <img src={products[1].images[0]} alt={products[1].name}></img>
           <h2>{products[1].name}</h2>
           <h3>
@@ -85,7 +95,7 @@ function App() {
           </h3>
           <p>{products[5].description}</p>
           <button>Buy now {products[5].prices[0].unit_amount}</button>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
