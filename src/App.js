@@ -16,10 +16,9 @@ function App() {
       const products = await getProducts();
       setProducts(products);
     };
-
     loadData();
   }, []);
-
+  console.log(products);
   /* Below code repition should be handled by a map function in it's own dedicated component but
   I have run out of time trying to figure out why my environmental variables dont work and why reloads crash everything */
   
@@ -54,7 +53,7 @@ function App() {
             price={products[2].prices[0].unit_amount}
             rarity={products[2].metadata.rarity}
             type={products[2].metadata.type}
-          />
+          /> 
           <Product
             priceID={products[3].prices[0].id}
             image={products[3].images[0]}
