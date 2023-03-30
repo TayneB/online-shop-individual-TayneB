@@ -8,7 +8,14 @@ const Product = ({
   rarity,
   price,
   type,
-}) => {
+}) => { 
+    if ( priceID === undefined |
+        image === undefined |
+        named === undefined |
+        description === undefined |
+        rarity === undefined |
+        price === undefined |
+        type === undefined) {} else {
   const onClick = () => {
     checkout(priceID);
   };
@@ -23,6 +30,6 @@ const Product = ({
       <button onClick={onClick}>Buy now {price} Gold Pieces</button>
     </li>
   );
-};
+}};
 
 export default Product;
