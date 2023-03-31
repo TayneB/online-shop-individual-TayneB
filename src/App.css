@@ -73,3 +73,31 @@ img {
   .button:hover {
     cursor: pointer;
   }
+
+  @media only screen and (min-width:480px) {
+
+    * {
+        background-color: blue;
+    }
+
+    ul {
+        display: grid;
+        grid-template:
+        [row1-start] '1 1' 50% [row1-end]
+        /1fr 1fr;
+    }
+  }
+
+  @media only screen and (min-width:768px) {
+    * {
+        background-color: green;
+    }
+
+    ul {
+        display: grid;
+        grid-template:
+        [row1-start] "product-item product-item product-item" min-content [row1-end]
+        
+        /1fr 1fr 1fr;
+    }
+  }
