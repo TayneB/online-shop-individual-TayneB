@@ -1,4 +1,4 @@
-/* import Product from './Product';
+import Product from './Product';
 
 const Products = ({ products }) => {
   return (
@@ -18,4 +18,4 @@ const Products = ({ products }) => {
     </ul>
   );
 };
-export default Products; */
+export default Products;
