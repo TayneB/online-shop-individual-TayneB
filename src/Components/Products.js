@@ -5,7 +5,8 @@ const Products = ({ products }) => {
     <ul className="product-grid">
       {products.map((products) => (
         <Product
-          id={products.id}
+          key={products.id}
+          
           priceID={products.prices[0].id}
           image={products.images[0]}
           named={products.name}

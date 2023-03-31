@@ -13,14 +13,14 @@ const Product = ({
     checkout(priceID);
   };
   return (
-    <li class={rarity}>
+    <li className={rarity}>
       <img src={image} alt={named}></img>
       <h2>{named}</h2>
       <h3>
         Rarity: {rarity} | Type: {type}
       </h3>
       <p>{description}</p>
-      <button class='button' onClick={onClick}>Buy now ${price} nzd</button>
+      <button className='button' onClick={onClick}>Buy now ${price} nzd</button>
     </li>
   );
 };
