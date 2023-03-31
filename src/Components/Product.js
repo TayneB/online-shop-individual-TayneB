@@ -13,7 +13,7 @@ const Product = ({
     checkout(priceID);
   };
   return (
-    <li>
+    <li class={rarity}>
       <img src={image} alt={named}></img>
       <h2>{named}</h2>
       <h3>
