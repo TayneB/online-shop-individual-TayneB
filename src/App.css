@@ -105,5 +105,11 @@ img {
         [row1-start] "product-item product-item product-item" min-content [row1-end]
         
         /1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    li {
+        max-width: 30rem;
     }
   }
