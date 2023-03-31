@@ -14,7 +14,7 @@ const Products = ({ products }) => {
           rarity={products.metadata.rarity}
           type={products.metadata.type}
         />
-      ))}d
+      ))}
     </ul>
   );
 };
