@@ -1,4 +1,5 @@
 import Product from './Product';
+import formatAmount from '../utils/formatAmount';
 
 const Products = ({ products }) => {
   return (
@@ -11,7 +12,7 @@ const Products = ({ products }) => {
           image={products.images[0]}
           named={products.name}
           description={products.description}
-          price={products.prices[0].unit_amount}
+          price={formatAmount(products.prices[0].unit_amount)}
           rarity={products.metadata.rarity}
           type={products.metadata.type}
         />

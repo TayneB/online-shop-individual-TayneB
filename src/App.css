@@ -22,13 +22,14 @@ ul {
 li {
     margin: 1rem auto;
     padding: 0.5rem;
-    max-width: 80%;
+    max-width: 95%;
     box-sizing: border-box;
 }
 
 img {
-    max-width: 75%;
+    max-width: 70%;
     height: auto;
+    max-height: 10rem;
 }
 
 .artifact {
@@ -57,10 +58,8 @@ img {
 }
 
 .button { 
-    
     border: none;
     border-radius: 0.5rem;
-    
     padding: 1rem 2rem;
     text-decoration: none;
     display: inline-block;
@@ -70,28 +69,35 @@ img {
     max-width: 20rem;
   }
 
+  li.common button{
+    padding: 0.8rem 1.8rem;
+    border: grey 0.2rem solid;
+  }
+
   .button:hover {
     cursor: pointer;
   }
 
   @media only screen and (min-width:480px) {
 
-    * {
-        background-color: blue;
-    }
-
     ul {
         display: grid;
         grid-template:
-        [row1-start] '1 1' 50% [row1-end]
+        [row1-start] '1 1' [row1-end]
         /1fr 1fr;
+        column-gap: 0rem;
+        row-gap: 1rem;
+        
+        
     }
+
+    li {
+        margin: 0 auto;  
+    }
+
   }
 
   @media only screen and (min-width:768px) {
-    * {
-        background-color: green;
-    }
 
     ul {
         display: grid;

@@ -20,7 +20,7 @@ const Product = ({
         Rarity: {rarity} | Type: {type}
       </h3>
       <p>{description}</p>
-      <button className='button' onClick={onClick}>Buy now ${price} nzd</button>
+      <button className='button' onClick={onClick}>Buy now {price} nzd</button>
     </li>
   );
 };
